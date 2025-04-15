@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Portfolio Java Developer"/>
+    <meta name="author" content="Daniel Strielnikow"/>
+    <title>Portfolio - Project</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" th:href="@{/images/favicon.ico}"/>
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet"/>
+    <!-- Bootstrap icons-->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+<main class="flex-shrink-0">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" th:href="@{/index}"><span class="fw-bolder text-primary">Portfolio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" th:href="@{/index}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/resume}">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/projects}">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Projects Section-->
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Project Card 1-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">Film-Club</h2>
+                                    <p>
+                                        A movie and TV show database project that allows users to discover, rate, and
+                                        review films and series.
+                                        It features personalized watchlists and a community-driven experience.
+                                    </p>
+                                </div>
+                                <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..."/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <a href="https://verdant-tapioca-b788b1.netlify.app/" target="_blank">
+                                        <h2 class="fw-bolder">Electri-Shop</h2>
+                                    </a>
+                                    <p>
+                                        An e-commerce platform for browsing, managing, and purchasing products. It
+                                        allows users to add
+                                        items to a shopping cart, place orders, and track their purchases.
+                                    </p>
+                                </div>
+                                <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..."/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                <p class="fs-3 fw-bold mb-3">Contact me</p>
+                <p class="fs-5 mb-1">Email: <a href="mailto:daniel.strielnikow@outlook.com" class="text-white">daniel.strielnikow@outlook.com</a></p>
+                <p class="fs-5 mb-0">Phone: <a href="tel:+48782822793" class="text-white">+48 782 822 793</a></p>
+            </div>
+        </div>
+    </section>
+
+</main>
+</body>
+</html>
